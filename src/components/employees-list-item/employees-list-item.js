@@ -16,7 +16,7 @@ class EmployeesListItem extends Component {
         }))
     }
 
-    like = () => {
+    onRise = () => {
         this.setState(({ like }) => ({
             like: !like
         }))
@@ -37,7 +37,7 @@ class EmployeesListItem extends Component {
         return (
             // <li className={`list-group-item d-flex justify-content-between ${increase ? 'increase' : ''}`}></li>
             <li className={classNames}>
-                <span className="list-group-item-label" onClick={this.like}>{name}</span>
+                <span className="list-group-item-label" onClick={this.onRise}>{name}</span>
                 <input type="text" className="list-group-item-input" defaultValue={salary + '$'} />
                 <div className="d-flex justify-content-center align-items-center">
                     <button type="button"
