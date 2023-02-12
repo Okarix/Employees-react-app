@@ -5,7 +5,7 @@ const AppFilter = (props) => {
         { name: 'all', label: 'Все сотрудники' },
         { name: 'rise', label: 'На повышение' },
         { name: 'salaryMore1000', label: 'З/П больше 1000$' }
-    ];
+    ]
 
     const buttons = buttonsData.map(({ name, label }) => {
         const active = props.filter === name;
@@ -18,7 +18,7 @@ const AppFilter = (props) => {
                 onClick={() => props.onFilterSelect(name)}>
                 {label}
             </button>
-        )
+        );
     })
 
     return (

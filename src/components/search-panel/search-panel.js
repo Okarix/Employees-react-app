@@ -6,13 +6,13 @@ class SearchPanel extends Component {
         super(props)
         this.state = {
             term: ''
-        }
+        };
     }
 
     onUpdateSearch = (e) => {
         const term = e.target.value;
         this.setState({ term });
-        this.props.onUpdateSearch(term)
+        this.props.onUpdateSearch(term);
     }
 
     render() {
